@@ -1,0 +1,222 @@
+/* GERAL */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS */
+    --hue: 260;
+    --primary-color: hsl(var(--hue), 80%, 50%);
+    --primary-color-light: hsl(var(--hue),5%, 95%);
+    --bg-light: hsl(var(--hue), 10%, 95%);
+    --bg-dark: hsl(var(--hue), 0%, 25%);
+    --title: hsl(210, 11%, 15%);
+    --paragraph: hsl(210, 9%, 31%);
+
+    /* FONT SIZE */
+    font-size: 62.5%; /* 1 rem = 10px */
+    --h1-size: 3rem;
+    --h2-size: 2.5rem;
+    --h3-size: 2rem;
+    --p-size: 1.6rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--p-size);
+
+    text-align: center;
+
+    background-color: var(--bg-light);
+}
+
+.max-width{
+    max-width: 1300px;;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.wrapper {
+
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+}
+
+ul{
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    padding-block: 16rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--paragraph);
+}
+
+section header h3 {
+    font-size: var(--h3-size);
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    color: var(--primary-color);
+
+    text-transform: uppercase;
+
+    margin-bottom: 1.6rem;
+}
+
+section header h1 {
+    font-size: var(--h1-size);
+    line-height: 3.9rem;
+
+    color: var(--title);
+
+    margin-bottom: 2.4rem;
+}
+
+section .content p {
+    font-weight: 400;
+    font-size: var(--p-size);
+    line-height: 150%;
+
+    color: var(--paragraph);
+}
+
+/* NAV MENU */
+
+.nav__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    position: fixed;
+
+    background-color: var(--primary-color);
+}
+
+.nav__menu li {
+    display: inline-block;
+    padding: 2rem;
+}
+
+.nav__menu a {
+    color: var(--primary-color-light);
+}
+
+.nav__menu a:hover{
+    transition: all ease 0.4s;
+    color: #fafafa;
+}
+
+.about .content {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 6rem;
+}
+
+.about .content p {
+    width: 30%;
+    text-indent: 2rem;
+    text-align: left;
+}
+
+.about .content img {
+    border-radius: 1rem;
+    box-shadow: 55px 55px rgba(67, 5, 138, 0.158);
+}
+
+.contact{
+    background-color: hsl(var(--hue), 30%, 70%);
+}
+
+.contact h1 {
+    color: #fafafa;
+}
+
+.contact .content{
+    display: grid;
+    column-gap: 5rem;
+    grid-template-columns: 60.5rem fr;
+    grid-template-areas: 'A B';
+    padding-top: 6rem;
+}
+
+.col_a{
+    grid-area: A;
+    margin: auto;
+}
+
+.col_b {
+    grid-area: B;
+    margin: auto;
+}
+
+input, textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--p-size);
+    padding: 0.5rem;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    width: 40rem;
+    resize: none;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+button{
+    font-size: var(--p-size);
+    background-color: var(--primary-color);
+    border: 0;
+    color: #fafafa;
+    padding: 0.6rem 2rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    display: flex;
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+button:hover {
+    background-color: rgb(135, 52, 190);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+    transition: all ease 0.4s;
+}
+
+#name, #subject {
+    height: 4rem;
+}
+
+input select option{
+    padding-right: 1rem;
+}
+
+::placeholder{
+    padding: 0;
+}
+
+

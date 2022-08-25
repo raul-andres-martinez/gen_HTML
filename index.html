@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Raul Andres</title>
 </head>
 <body>
@@ -12,13 +13,23 @@
         <ul>
             <li><a href="#about">Sobre</a></li>
             <li><a href="#contact">Contato</a></li>
-            <li><a href="#localization">Localização</a></li>
+            <li><a href="#footer">Redes Sociais</a></li>
             <li><a href="./html/blogpessoal.html">Pokemon</a></li>
         </ul>
     </nav>
     
+    <!-- HEADER -->
+    <!-- <section id="header">
+        <div class="wrapper">
+            <header>
+                <h3>Desenvolvedor <span>Back End</span></h3>
+                <h1>Raul Andres</h1>
+            </header>
+        </div>
+    </section> -->
+
     <!-- ABOUT SECTION -->
-    <section id="about">
+    <section class="about" id="about">
         <div class="wrapper">
             <header>
                 <h3>Sobre</h3>
@@ -39,7 +50,7 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact">
+    <section class="contact" id="contact">
         <div class="wrapper">
             <header>
                 <h3>Contato</h3>
@@ -48,16 +59,23 @@
         </div>
 
             <div class="content">
+                <div class="col_b">
                 <form>
                     <input type="text" id="name" placeholder="Digite seu nome" maxlength="16">
                     <input type="text" id="subject" placeholder="Assunto" maxlength="100">
-                    <input type="text" id="contactReason" placeholder="Motivo do contato" maxlength="500">
-                    <input type="button" value="Enviar">
+                    <textarea id="contactReason" maxlength="500" rows="10" cols="40" placeholder="Motivo do contato"></textarea>
+                    <button type="submit">Enviar</button>
                 </form>
+            </div>
+
+            <div class="col_a">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.05307991244!2d-46.8761693746484!3d-23.681530272866855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1661359602023!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
             </div>
     </section>
 
-    <!-- LOCALIZATION SECTION -->
+   <!--  LOCALIZATION SECTION 
     <section id="localization">
         <div class="wrapper">
             <header>
@@ -67,9 +85,21 @@
         </div>
 
         <div class="content">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.05307991244!2d-46.8761693746484!3d-23.681530272866855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1661359602023!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+    </section> -->
+
+    <!-- FOOTER -->
+    <section id="footer">
+        <footer>
+            <div class="wrapper">
+                <ul>
+                    <li>LINKEDIN</li>
+                    <li>GIT</li>
+                </ul>
+            </div>
+        </footer>
     </section>
 
+    </ul>
 </body>
 </html>
