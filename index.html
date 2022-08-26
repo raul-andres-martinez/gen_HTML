@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Raul Andres</title>
 </head>
@@ -60,11 +61,24 @@
 
             <div class="content">
                 <div class="col_b">
-                <form>
-                    <input type="text" id="name" placeholder="Digite seu nome" maxlength="16">
-                    <input type="text" id="subject" placeholder="Assunto" maxlength="100">
-                    <textarea id="contactReason" maxlength="500" rows="10" cols="40" placeholder="Motivo do contato"></textarea>
-                    <button type="submit">Enviar</button>
+                <form id="sendMessage" class="form">
+                    <div id="form-field">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" placeholder="Digite seu nome" maxlength="26" autocomplete="off">
+                        <small></small>
+                    </div>
+                    <div id="form-field">
+                        <label for="subject">Assunto:</label>
+                        <input type="text" id="subject" placeholder="Assunto" maxlength="100">
+                        <small></small>
+                    </div>
+                    <div id="form-field">
+                        <label for="contactReason">Mensagem:</label>
+                        <textarea id="contactReason" maxlength="500" rows="10" cols="40" placeholder="Motivo do contato"></textarea>
+                        <small></small>
+                    </div>
+                    <button id="btn" onclick="addEventListener()" type="submit">Enviar</button>
+                    <div id="status"></div>
                 </form>
             </div>
 
@@ -89,17 +103,20 @@
     </section> -->
 
     <!-- FOOTER -->
-    <section id="footer">
+    <section class="footer" id="footer">
         <footer>
             <div class="wrapper">
                 <ul>
-                    <li>LINKEDIN</li>
-                    <li>GIT</li>
+                    <li><a href="https://github.com"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/raul-andres-martinez-de-souza-92353b231/"><i class="fa-brands fa-github"></i></a></li>
                 </ul>
+                <p>Feito com &#10084; por <strong>Raul</strong></p>
             </div>
         </footer>
     </section>
 
     </ul>
+
+    <script src="./js/form.js"></script>
 </body>
 </html>
